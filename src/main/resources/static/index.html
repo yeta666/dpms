@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+		<style type="text/css">
+			#carousel {
+				height: 500px;
+				overflow: hidden;
+			}
+			
+			.wordBox p {
+				text-align: justify;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<!-- PRE LOADER -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wordpress">
+				<span class="sk-inner-circle"></span>
+			</div>
+		</div>
+
+		<!--导航栏-->
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                    <span class="icon icon-bar"></span>
+	                    <span class="icon icon-bar"></span>
+	                    <span class="icon icon-bar"></span>
+	               </button>
+					<a href="index.html" class="navbar-brand">
+						<i class="fa fa-magnet"></i> 
+						<span>分布式人口管理系统</span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="show.html">数据展示</a>
+						</li>
+						<li>
+							<a href="pridiction.html">数据预测</a>
+						</li>
+						<li>
+							<a href="login.html">管理员登录</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Home Section -->
+		<section id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<!--图片轮播-->
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel" data-slide-to="1"></li>
+								<li data-target="#carousel" data-slide-to="2"></li>
+								<li data-target="#carousel" data-slide-to="3"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/people1.jpg" alt="人山人海">
+									<div class="carousel-caption">
+										人山人海
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/people2.jpg" alt="人山人海">
+									<div class="carousel-caption">
+										人山人海
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/people3.jpg" alt="人山人海">
+									<div class="carousel-caption">
+										人山人海
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/people4.jpg" alt="人山人海">
+									<div class="carousel-caption">
+										人山人海
+									</div>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+						<hr>
+
+						<div class="wordBox">
+							<div class="col-sm-3">
+								<p>2016年，中国大陆总人口：<b>13亿8271万人</b>（包括31个省、自治区、直辖市和中国人民解放军现役军人，不包括香港、澳门和台湾以及海外华侨人数），比2015年增加<b>809万</b>人，2016年全年出生人口<b>1786万</b>人，死亡人口<b>977万</b>人。</p>
+							</div>
+							<div class="col-sm-3">
+								<p>从年龄构成看，16周岁以上至60周岁以下（不含60周岁）的劳动年龄人口9亿0747万人，占总人口的比重为65.62%，60周岁及以上人口2亿3086万人，占总人口的16.69 %；65周岁及以上人口1亿5003万人，占总人口的10.85%。</p>
+							</div>
+							<div class="col-sm-3">
+								<p>从城乡结构看，城镇常住人口8亿2345万人，比2015年末增加2182万人，乡村常住人口5亿8973万人，减少1373万人，城镇人口占总人口比重（城镇化率）为57.35%。</p>
+							</div>
+							<div class="col-sm-3">
+								<p>2016年人口出生率为12.95%；死亡人口977万人，人口死亡率为7.09%；人口自然增长率为5.86%。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+						<i class="fa fa-magnet"></i>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="footer-copyright">
+							<p>© 2017 YETA | All Rights Reserved. </p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<p class="footer-copyright">
+							<a href="mailto:429721783@qq.com">429721783@qq.com</a>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/preloader.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.carousel').carousel({
+				interval: 2000
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,11 @@
+server:
+  port: 8888
+  context-path: /dpms
+spring:
+  datasource:
+    username: DPMS_USERNAME
+    password: DPMS_PASSWORD
+    url: jdbc:mysql://localhost:8066/DPMS_DB?useUnicode=true&amp;characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  type-aliases-package: com.yeta.dpms.model

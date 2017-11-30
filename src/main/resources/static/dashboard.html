@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>系统管理</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+		<link rel="stylesheet" type="text/css" href="css/dashboard.css"/>
+	</head>
+
+	<body>
+
+		<!-- PRE LOADER -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wordpress">
+				<span class="sk-inner-circle"></span>
+			</div>
+		</div>
+
+		<!--导航栏-->
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                    <span class="icon icon-bar"></span>
+	                    <span class="icon icon-bar"></span>
+	                    <span class="icon icon-bar"></span>
+	               </button>
+					<a href="index.html" class="navbar-brand">
+						<i class="fa fa-magnet"></i>
+						<span>分布式人口管理系统 - 后台管理</span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Home Section -->
+		<section id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<div class="selectBox">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist" id="myTabs">
+								<li role="presentation">
+									<a href="#area" aria-controls="area" role="tab" data-toggle="tab">地区管理</a>
+								</li>
+								<li role="presentation">
+									<a href="#ageRange" aria-controls="ageRange" role="tab" data-toggle="tab">年龄段管理</a>
+								</li>
+								<li role="presentation">
+									<a href="#lastName" aria-controls="lastName" role="tab" data-toggle="tab">姓氏管理</a>
+								</li>
+								<li role="presentation">
+									<a href="#nation" aria-controls="nation" role="tab" data-toggle="tab">民族管理</a>
+								</li>
+								<li role="presentation">
+									<a href="#profession" aria-controls="profession" role="tab" data-toggle="tab">行业管理</a>
+								</li>
+								<li role="presentation">
+									<a href="#user" aria-controls="user" role="tab" data-toggle="tab">用户管理</a>
+								</li>
+								<li role="presentation">
+									<a href="#statistics" aria-controls="statistics" role="tab" data-toggle="tab">统计数据管理</a>
+								</li>
+								<li role="presentation">
+									<a href="#log" aria-controls="log" role="tab" data-toggle="tab">日志管理</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-10 col-sm-10">	
+						<!-- Tab panes -->
+						<div class="tab-content displayBox">
+							<div role="tabpanel" class="tab-pane fade in" id="area"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="ageRange"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="lastName"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="nation"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="profession"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="user"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="statistics"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="log"></div>
+						</div>
+						
+						<!--loading-->
+						<div class="loading"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+						<i class="fa fa-magnet"></i>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="footer-copyright">
+							<p>© 2017 YETA | All Rights Reserved. </p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<p class="footer-copyright">
+							<a href="mailto:429721783@qq.com">429721783@qq.com</a>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/preloader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dashboard.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

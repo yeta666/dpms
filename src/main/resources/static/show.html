@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>数据展示</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+		<link rel="stylesheet" type="text/css" href="css/show.css"/>
+	</head>
+
+	<body>
+
+		<!-- PRE LOADER -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wordpress">
+				<span class="sk-inner-circle"></span>
+			</div>
+		</div>
+
+		<!--导航栏-->
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                    <span class="icon icon-bar"></span>
+	                    <span class="icon icon-bar"></span>
+	                    <span class="icon icon-bar"></span>
+	               </button>
+					<a href="index.html" class="navbar-brand">
+						<i class="fa fa-magnet"></i>
+						<span>分布式人口管理系统</span>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li class="active">
+							<a href="show.html">数据展示</a>
+						</li>
+						<li>
+							<a href="pridiction.html">数据预测</a>
+						</li>
+						<li>
+							<a href="login.html">管理员登录</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Home Section -->
+		<section id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<div class="selectBox">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist" id="myTabs">
+								<li role="presentation">
+									<a href="#totalPeopleNum" aria-controls="totalPeopleNum" role="tab" data-toggle="tab">按<b>总人口</b>展示</a>
+								</li>
+								<li role="presentation">
+									<a href="#gender" aria-controls="gender" role="tab" data-toggle="tab">按<b>性别</b>展示</a>
+								</li>
+								<li role="presentation">
+									<a href="#ageRange" aria-controls="ageRange" role="tab" data-toggle="tab">按<b>年龄段</b>展示</a>
+								</li>
+								<li role="presentation">
+									<a href="#nation" aria-controls="nation" role="tab" data-toggle="tab">按<b>民族</b>展示</a>
+								</li>
+								<li role="presentation">
+									<a href="#lastName" aria-controls="lastName" role="tab" data-toggle="tab">按<b>姓氏</b>展示</a>
+								</li>
+								<li role="presentation">
+									<a href="#profession" aria-controls="profession" role="tab" data-toggle="tab">按<b>行业</b>展示</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-10 col-sm-10">
+						<!--地区搜索区-->
+						<div class="searchBox">
+							<div class="col-md-4 col-sm-4">
+								<div class="dropdown provinceBox">
+									<button class="btn btn-info dropdown-toggle" type="button" id="provinceMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span>请选择省/自治区/直辖市</span>
+								<span class="caret"></span>
+							</button>
+									<ul class="dropdown-menu menuUl" aria-labelledby="provinceMenu">
+										<select class="form-control" size="10"></select>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="dropdown cityBox">
+									<button class="btn btn-primary dropdown-toggle" type="button" id="cityMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span>请选择市/自治州</span>
+								<span class="caret"></span>
+							</button>
+									<ul class="dropdown-menu menuUl" aria-labelledby="cityMenu">
+										<select class="form-control" size="10"></select>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="dropdown regionBox">
+									<button class="btn btn-warning dropdown-toggle" type="button" id="regionMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span>请选择区/县级市/县</span>
+								<span class="caret"></span>
+							</button>
+									<ul class="dropdown-menu menuUl" aria-labelledby="regionMenu">
+										<select class="form-control" size="10"></select>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<hr />
+						
+						<!-- Tab panes -->
+						<div class="tab-content displayBox">
+							<div role="tabpanel" class="tab-pane fade in" id="totalPeopleNum"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="gender"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="ageRange"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="nation"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="lastName"></div>
+							<div role="tabpanel" class="tab-pane fade in" id="profession"></div>
+						</div>
+						
+						<!--loading-->
+						<div class="loading"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+						<i class="fa fa-magnet"></i>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="footer-copyright">
+							<p>© 2017 YETA | All Rights Reserved. </p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<p class="footer-copyright">
+							<a href="mailto:429721783@qq.com">429721783@qq.com</a>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/preloader.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/show.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

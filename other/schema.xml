@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE mycat:schema SYSTEM "schema.dtd">
+<mycat:schema xmlns:mycat="http://io.mycat/">
+
+	<schema name="DPMS_DB" checkSQLschema="false">
+	
+		<table name="people2016" primaryKey="ID" dataNode="chengdu, zigong, panzhihua, luzhou, deyang, mianyang, guangyuan,
+			suining, neijiang, leshan, nanchong, meishan, yibin, guangan, 
+			dazhou, yaan, bazhong, ziyang, aba, ganzi, liangshan" rule="auto-sharding-long" />
+			
+		<table name="age_range" primaryKey="age_range_code" type="global" dataNode="info, 
+			chengdu, zigong, panzhihua, luzhou, deyang, mianyang, guangyuan,
+			suining, neijiang, leshan, nanchong, meishan, yibin, guangan, 
+			dazhou, yaan, bazhong, ziyang, aba, ganzi, liangshan" />
+			
+		<table name="profession" primaryKey="profession_code" dataNode="info" />
+		<table name="province" primaryKey="province_code" dataNode="info" />
+		<table name="city" primaryKey="city_code" dataNode="info" />
+		<table name="region" primaryKey="region_code" dataNode="info" />
+		<table name="nation" primaryKey="nation_code" dataNode="info" />
+		<table name="last_name" primaryKey="last_name_code" dataNode="info" />
+		<table name="rate" primaryKey="rate_code" dataNode="info" />
+		<table name="user" primaryKey="user_code" dataNode="info" />
+		<table name="log" primaryKey="log_code" dataNode="info" />
+	</schema>
+	
+	<dataNode name="info" dataHost="127.0.0.1" database="dpms_info" />
+	
+	<dataNode name="chengdu" dataHost="127.0.0.1" database="dpms_chengdu" />
+	<dataNode name="zigong" dataHost="127.0.0.1" database="dpms_zigong" />
+	<dataNode name="panzhihua" dataHost="127.0.0.1" database="dpms_panzhihua" />
+	<dataNode name="luzhou" dataHost="127.0.0.1" database="dpms_luzhou" />
+	<dataNode name="deyang" dataHost="127.0.0.1" database="dpms_deyang" />
+	<dataNode name="mianyang" dataHost="127.0.0.1" database="dpms_mianyang" />
+	<dataNode name="guangyuan" dataHost="127.0.0.1" database="dpms_guangyuan" />
+	
+	<dataNode name="suining" dataHost="127.0.0.1" database="dpms_suining" />
+	<dataNode name="neijiang" dataHost="127.0.0.1" database="dpms_neijiang" />
+	<dataNode name="leshan" dataHost="127.0.0.1" database="dpms_leshan" />
+	<dataNode name="nanchong" dataHost="127.0.0.1" database="dpms_nanchong" />
+	<dataNode name="meishan" dataHost="127.0.0.1" database="dpms_meishan" />
+	<dataNode name="yibin" dataHost="127.0.0.1" database="dpms_yibin" />
+	<dataNode name="guangan" dataHost="127.0.0.1" database="dpms_guangan" />
+	
+	<dataNode name="dazhou" dataHost="127.0.0.1" database="dpms_dazhou" />
+	<dataNode name="yaan" dataHost="127.0.0.1" database="dpms_yaan" />
+	<dataNode name="bazhong" dataHost="127.0.0.1" database="dpms_bazhong" />
+	<dataNode name="ziyang" dataHost="127.0.0.1" database="dpms_ziyang" />
+	<dataNode name="aba" dataHost="127.0.0.1" database="dpms_aba" />
+	<dataNode name="ganzi" dataHost="127.0.0.1" database="dpms_ganzi" />
+	<dataNode name="liangshan" dataHost="127.0.0.1" database="dpms_liangshan" />
+	
+	<dataHost name="127.0.0.1" maxCon="1000" minCon="10" balance="0" writeType="0" dbType="mysql" dbDriver="native" switchType="0"  slaveThreshold="100">
+		<heartbeat>select user()</heartbeat>
+		<writeHost host="127.0.0.1_host" url="127.0.0.1:3306" user="root" password="yeta" />
+	</dataHost>
+	
+</mycat:schema>

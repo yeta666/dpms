@@ -18,13 +18,18 @@ public class LogController {
     @Autowired
     private LogService logService;
 
-    @GetMapping(value = "delete")
+    @GetMapping(value = "/delete")
     public ResponseResult delete(RequestParam requestParam) {
         return logService.delete(requestParam);
     }
 
-    @GetMapping(value = "findAll")
+    @GetMapping(value = "/findAll")
     public ResponseResult findAll() {
         return logService.findAll();
+    }
+
+    @GetMapping(value = "/findAllByTime")
+    public ResponseResult findAllByTime(RequestParam requestParam) {
+        return new ResponseResult();
     }
 }

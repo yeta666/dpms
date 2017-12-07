@@ -22,4 +22,29 @@ public class UserController {
     public ResponseResult login(RequestParam requestParam) {
         return userService.login(requestParam);
     }
+
+    @GetMapping(value = "/delete")
+    public ResponseResult delete(RequestParam requestParam) {
+        return userService.login(requestParam);
+    }
+
+    @GetMapping(value = "/findAll")
+    public ResponseResult findAll(RequestParam requestParam) {
+        return userService.login(requestParam);
+    }
+
+    @GetMapping(value = "/save")
+    public ResponseResult save(RequestParam requestParam) {
+        return userService.login(requestParam);
+    }
+
+    @GetMapping(value = "/update")
+    public ResponseResult update(RequestParam requestParam) {
+        return userService.login(requestParam);
+    }
+
+    @GetMapping(value = "/findByUsername")
+    public ResponseResult findByUsername(RequestParam requestParam) {
+        return userService.login(requestParam);
+    }
 }
